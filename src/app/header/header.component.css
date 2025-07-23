@@ -1,0 +1,31 @@
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  background-color: #025940;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links button {
+  margin-left: 16px;
+}
