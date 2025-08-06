@@ -1,96 +1,153 @@
-.container-doacao {
+/* Container principal */
+.doacao-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: white;
-  padding: 0;
-  margin: 0;
 }
 
-/* Imagem e o texto sobre */
-.topo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 60px 20px;
-  flex-wrap: wrap;
-}
-
-.imagem img {
-  width: 250px;
-  height: 250px;
-  background-color: #ccc;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.texto {
-  max-width: 300px;
-}
-
-.texto h2 {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.texto p {
-  font-size: 16px;
-  color: #333;
-}
-
-/* Carrossel lista de roupas que podem ser doadas*/
-.carrossel {
-  background-color: #00694e;
-  color: black;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.carrossel h3 {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-.carrossel-conteudo {
+/* Seção principal (imagem + texto) */
+.promo-section {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
-.carrossel-conteudo img {
-  width: 110px;
-  height: 110px;
+.promo-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.seta {
-  font-size: 36px;
-  cursor: pointer;
-  color: black;
-}
-
-.legenda {
-  margin-top: 10px;
-  font-style: italic;
-  font-size: 16px;
-}
-
-/* Cuidados na hora de doar */
-.cuidados {
-  padding: 70px 30px 100px;
+.promo-text {
   text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 400px;
+}
+
+.promo-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.promo-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Carrossel */
+.carousel-section {
+  text-align: center;
+  background-color: #004d40;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.carousel-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel-item img {
+  width: 120px;
+  height: 120px;
+}
+
+.carousel-item p {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Cuidados */
+.cuidados {
+  margin-top: 50px;
+  padding: 0 20px;
 }
 
 .cuidados h3 {
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 20px;
 }
 
 .cuidados ul {
-  list-style: disc;
-  padding-left: 20px;
-  font-size: 18px;
-  line-height: 1.8;
+  list-style: none; /* Remove as bolinhas */
+  padding-left: 0;
+  font-size: 22px;
+  line-height: 2;
+}
+
+.cuidados li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.check-icon {
+  color: #00994d; /* Verde bonito */
+  font-size: 22px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .promo-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .promo-text h1 {
+    font-size: 32px;
+  }
+
+  .promo-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .carousel-section {
+    width: 100%;
+  }
+
+  .carousel-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .carousel-section h2 {
+    font-size: 22px;
+  }
+
+  .cuidados h3 {
+    font-size: 22px;
+  }
+
+  .cuidados ul {
+    font-size: 18px;
+  }
 }
