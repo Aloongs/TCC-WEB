@@ -1,33 +1,36 @@
 <div class="doacao-container">
-  <!-- Seção principal -->
-<section class="promo-section">
-  <div class="promo-image">
-  </div>
-  <div class="promo-text">
-  <h1>DOE ROUPAS</h1>
-  <p>Uma peça esquecida no seu armário pode ser o abrigo que alguém precisa.</p>
-  </div>
-  </section>
 
-  <!-- Carrossel -->
-<section class="carousel-section">
-<h2>QUAIS ROUPAS EU POSSO DOAR?</h2>
-  <div class="carousel">
-    <button class="arrow">◀</button>
-    <div class="carousel-item">
-      <p>Camisas</p>
+  <!-- 1. Hero Section -->
+  <section class="hero-section">
+    <div class="hero-image">
+      <img src="" alt="">
     </div>
-    <button class="arrow">▶</button>
-  </div>
+    <div class="hero-text">
+      <h1>DOE ROUPAS</h1>
+      <p>Uma peça esquecida no seu armário pode ser o abrigo que alguém precisa.</p>
+      <button class="cta-btn">Doe agora</button>
+    </div>
   </section>
 
-  <!-- Cuidados -->
-<section class="cuidados">
-  <h3>Cuidados importantes na hora de doar:</h3>
-  <ul>
-    <li><span class="check-icon">✔</span> Roupas limpas e higienizadas</li>
-    <li><span class="check-icon">✔</span> Apenas peças sem rasgos</li>
-    <li><span class="check-icon">✔</span> Devem estar secas e em boas condições</li>
-  </ul>
+  <!-- 2. Carrossel Spotlight -->
+  <section class="carousel-section">
+    <h2>O que você pode doar?</h2>
+    <div class="carousel">
+      <button class="arrow" (click)="prevItem()">◀</button>
+      <div class="carousel-card">
+        <img [src]="itens[activeIndex].imagem" alt="{{itens[activeIndex].nome}}">
+        <p>{{itens[activeIndex].nome}}</p>
+      </div>
+      <button class="arrow" (click)="nextItem()">▶</button>
+    </div>
   </section>
-</div>
+
+<!-- 3. Checklist Timeline -->
+<section class="cuidados">
+  <h2>Cuidados importantes antes de doar:</h2>
+  <ul class="checklist">
+    <li><span class="circle">✔</span> Roupas limpas e higienizadas</li>
+    <li><span class="circle">✔</span> Sem rasgos ou danos graves</li>
+    <li><span class="circle">✔</span> Secas e em boas condições</li>
+  </ul>
+</section>

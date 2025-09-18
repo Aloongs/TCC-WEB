@@ -1,14 +1,28 @@
 .header-toolbar {
   display: flex;
   justify-content: space-between;
-  padding: 0 24px;
-  background-color: #025940;
-  color: white;
+  align-items: center;
+  padding: 0 32px;
+  background-color: #ffffff; /* fundo branco */
+  color: #000000; /* texto preto */
+  border-bottom: 2px solid #f2f2f2; /* linha discreta embaixo */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* sombra leve */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* sempre visível ao rolar */
 }
 
 .logo {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
+  color: #025940; /* deixa o logo em verde */
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* efeito sutil no hover */
 }
 
 .spacer {
@@ -18,14 +32,30 @@
 .nav-links {
   display: flex;
   align-items: center;
+  gap: 24px; /* espaçamento uniforme */
 }
 
 .nav-links a {
-  margin-left: 16px;
-  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
   text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  background-color: #025940; /* fundo verde no hover */
 }
 
 .nav-links button {
-  margin-left: 16px;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.nav-links button:hover {
+  color: #025940;
+  transform: scale(1.1);
 }

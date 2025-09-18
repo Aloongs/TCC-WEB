@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-sobre',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, MatIconModule], // 👈 importa aqui
   templateUrl: './sobre.component.html',
-  styleUrl: './sobre.component.css'
+  styleUrls: ['./sobre.component.css']
 })
-export class SobreComponent {
-
-}
+export class SobreComponent { }

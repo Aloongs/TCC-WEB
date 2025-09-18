@@ -1,27 +1,44 @@
 .footer-container {
-  background-color: #025940;
-  color: white;
-  padding: 20px;
+  background-color: #025940; /* verde escuro */
+  color: #ffffff; /* texto branco */
+  padding: 30px 20px;
   text-align: center;
+  position: relative;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #f1f1f1; /* cinza bem claro pro © */
 }
 
 .footer-icons {
-  margin-top: 8px;
+  margin-top: 14px;
 }
 
 .footer-icons mat-icon {
-  margin: 0 10px;
-  font-size: 24px;
+  margin: 0 12px;
+  font-size: 28px;
   cursor: pointer;
+  color: #f1f1f1; /* ícones brancos */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icons mat-icon:hover {
+  transform: scale(1.15); /* efeito de zoom */
 }
 
 .footer-links {
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 .footer-links a {
-  margin: 0 12px;
-  color: #bbbbbb;
+  margin: 0 16px;
+  color: #e0e0e0; /* cinza claro */
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
+

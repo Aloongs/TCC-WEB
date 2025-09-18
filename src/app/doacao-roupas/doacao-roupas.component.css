@@ -1,153 +1,142 @@
-/* Container principal */
+/* Container */
 .doacao-container {
+  font-family: Arial, sans-serif;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
-/* Seção principal (imagem + texto) */
-.promo-section {
+/* Hero Section */
+.hero-section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 40px;
+  justify-content: center;
+  gap: 50px;
   flex-wrap: wrap;
+  background: linear-gradient(135deg, #004d40, #0d524b);
+  border-radius: 20px;
+  padding: 60px 30px;
+  color: white;
+  margin-bottom: 60px;
 }
 
-.promo-image img {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 10px;
+.hero-image img {
+  width: 340px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-.promo-text {
-  text-align: left;
-  max-width: 400px;
+.hero-text {
+  max-width: 450px;
 }
 
-.promo-text h1 {
-  font-size: 40px;
-  font-weight: bold;
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: white;
   color: #004d40;
-  margin-bottom: 10px;
-}
-
-.promo-text p {
+  padding: 14px 30px;
   font-size: 18px;
-  line-height: 1.5;
+  font-weight: bold;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Carrossel */
+.cta-btn:hover {
+  background: #e0f2f1;
+}
+
+/* Carrossel Spotlight */
 .carousel-section {
   text-align: center;
-  background-color: #004d40;
-  color: white;
-  padding: 30px 20px;
-  border-radius: 15px;
-  width: 90%;
-  margin: 30px auto;
+  margin-bottom: 60px;
 }
 
 .carousel-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #004d40;
 }
 
 .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
-.carousel-item img {
-  width: 120px;
-  height: 120px;
+.carousel-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  width: 320px; /* 🔥 aumentei o tamanho */
 }
 
-.carousel-item p {
-  margin-top: 8px;
-  font-size: 20px;
-}
-
-.arrow {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* Cuidados */
-.cuidados {
-  margin-top: 50px;
-  padding: 0 20px;
-}
-
-.cuidados h3 {
-  font-size: 26px;
+.carousel-card img {
+  width: 160px;
   margin-bottom: 20px;
 }
 
-.cuidados ul {
-  list-style: none; /* Remove as bolinhas */
-  padding-left: 0;
+.carousel-card p {
   font-size: 22px;
-  line-height: 2;
+  font-weight: bold;
+  color: #004d40;
 }
 
-.cuidados li {
+.arrow {
+  background: #004d40;
+  color: white;
+  font-size: 28px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background: #26a69a;
+}
+
+/* Checklist */
+.checklist {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.checklist li {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  font-size: 18px;
+  color: #004d40;
+  font-weight: 500;
 }
 
-.check-icon {
-  color: #00994d; /* Verde bonito */
-  font-size: 22px;
-  margin-right: 10px;
+.circle {
+  background: #26a69a;
+  color: white;
   font-weight: bold;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .promo-section {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .promo-text h1 {
-    font-size: 32px;
-  }
-
-  .promo-image img {
-    width: 220px;
-    height: 220px;
-  }
-
-  .carousel-section {
-    width: 100%;
-  }
-
-  .carousel-item img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .carousel-section h2 {
-    font-size: 22px;
-  }
-
-  .cuidados h3 {
-    font-size: 22px;
-  }
-
-  .cuidados ul {
-    font-size: 18px;
-  }
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+  font-size: 16px;
 }
